@@ -1,11 +1,24 @@
 from setuptools import setup
 
+# python setup.py sdist 
+# python setup.py sdist upload
+
+# Install dependencies of package
+# python setup.py develop
+
+# Upload your distribution
+# twine upload dist/*
+
+
 setup(name='knazin',
-      version='0.1',
+      version='0.3',
       description='Knazin package',
-      url='http://github.com/knazin/funniest',
+      url='http://github.com/knazin/package',
       author='Kacper Knaz',
       author_email='knazkacper@gmail.com',
       license='GNU',
       packages=['knazin'],
+      install_requires=[
+          'markdown',
+      ],
       zip_safe=False)

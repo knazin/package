@@ -1,3 +1,2 @@
-
 def test():
-    print('This is first package of knazin')
+    return 'This is first package of knazin'
